@@ -1,0 +1,21 @@
+version: '3'
+services:
+  helloa:
+    image: qkdrmsgh73/helloa
+    platform: linux/amd64
+    container_name: helloa
+    build:
+      context: ./service-a
+      dockerfile: Dockerfile
+    ports:
+      - "8082:8082"
+  hellob:
+    image: qkdrmsgh73/hellob
+    platform: linux/amd64
+    container_name: hellob
+    build:
+      context: ./service-b
+      dockerfile: Dockerfile
+    ports:
+      - "8083:8083"
+
