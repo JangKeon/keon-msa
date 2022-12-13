@@ -1,7 +1,7 @@
 version: '3'
 services:
   helloa:
-    image: qkdrmsgh73/helloa
+    image: r2god7k/servicea
     platform: linux/amd64
     container_name: helloa
     build:
@@ -10,7 +10,7 @@ services:
     ports:
       - "8082:8082"
   hellob:
-    image: qkdrmsgh73/hellob
+    image: r2god7k/serviceb
     platform: linux/amd64
     container_name: hellob
     build:

@@ -10,8 +10,13 @@ import org.springframework.web.bind.annotation.RestController;
 public class ServiceBApplication {
 
     @RequestMapping("/")
-    public String hellob(){
-        return "hellob";
+    public String serviceb(){
+        return "MSA Process is fun !";
+    }
+
+    @RequestMapping("/grade")
+    public String Grade() {
+        return "Account Info : VIP";
     }
 
     public static void main(String[] args) {

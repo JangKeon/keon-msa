@@ -12,8 +12,13 @@ public class ServiceAApplication {
 
     // Hi I
     @RequestMapping("/")
-    public String helloa(){
+    public String servicea(){
         return "Keon's MSA WORK !";
+    }
+
+    @RequestMapping("/user")
+    public String User() {
+        return "Name : Jang Keon\nAge : 25\nHobby : Boarding";
     }
 
     public static void main(String[] args) {
