@@ -9,8 +9,6 @@ import org.springframework.web.bind.annotation.RestController;
 @SpringBootApplication
 public class ServiceAApplication {
 
-
-    // Hi I
     @RequestMapping("/")
     public String servicea(){
         return "Keon's MSA WORK !";
